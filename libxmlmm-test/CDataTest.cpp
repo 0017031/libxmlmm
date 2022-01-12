@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err58-cpp"
 //
 // Copyright (c) 2008-2020 Sean Farrell
 //
@@ -71,3 +73,4 @@ TEST(CDataTest, cdata_behaves_like_text_in_xpath) {
   std::string text = doc.query_string("/test/text()");
   EXPECT_EQ("This is a test.", text);
 }
+#pragma clang diagnostic pop
